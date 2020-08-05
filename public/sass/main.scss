@@ -1,0 +1,35 @@
+$black2:#292929;
+$granate:#800404;
+$institucional:#3a5193;
+//importando Bootstrap
+@import 'bootstrap/bootstrap.scss';
+
+//configuracion general del sitio
+body{
+	font-family: 'Montserrat', sans-serif;
+	color:$black2;
+	background-color: white;
+}
+
+header{
+	.row{
+		margin: 0;
+
+		.col{
+			max-height: 150px;
+		}
+	}
+}
+.logo{
+	height: 100px;
+	text-align: center;
+}
+.color-granate{
+	color: $granate;
+}
+.color-institucional{
+	color:$institucional;
+}
+.bg-institucional{
+	background-color: $institucional;
+}
