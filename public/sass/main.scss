@@ -1,6 +1,10 @@
 $black2:#292929;
 $granate:#800404;
 $institucional:#3a5193;
+$insta:#FFC160;
+$face:#41B5FF;
+$wtp:#4AD675;
+$youtube:#FF5959;
 //importando Bootstrap
 @import 'bootstrap/bootstrap.scss';
 
@@ -14,15 +18,18 @@ body{
 header{
 	.row{
 		margin: 0;
-
-		.col{
-			max-height: 150px;
+		.text-uni{
+				font-weight: bold;
 		}
 	}
 }
+
 .logo{
-	height: 100px;
+	height: 4.5rem;
 	text-align: center;
+}
+.logo-menu{
+	height: 2rem;
 }
 .color-granate{
 	color: $granate;
@@ -32,4 +39,34 @@ header{
 }
 .bg-institucional{
 	background-color: $institucional;
+}
+.icon-social{
+
+	a{
+		color: white;
+		font-size: 1.5rem;
+		margin: 0 0.5rem;
+	}
+	
+	.facebook:hover{
+		color: $face;
+	}
+	.instagram:hover{
+		color: $insta;
+	}
+	.whatsaap:hover{
+		color:$wtp;
+	}
+	.youtube:hover{
+		color:$youtube;
+	}
+}
+
+footer{
+	.footer-divider{
+		border-color:#ffffffcc;
+	}
+	.logo-footer{
+		margin-bottom: 1rem;
+	}
 }
