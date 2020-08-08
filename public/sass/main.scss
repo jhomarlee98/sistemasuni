@@ -1,6 +1,6 @@
 $black2:#292929;
 $granate:#800404;
-$institucional:#3a5193;
+$primary:#3a5193;
 $insta:#FFC160;
 $face:#41B5FF;
 $wtp:#4AD675;
@@ -24,6 +24,12 @@ header{
 	}
 }
 
+a{
+	text-decoration: none;
+	&:hover{
+		text-decoration: none;
+	}
+}
 .logo{
 	height: 4.5rem;
 	text-align: center;
@@ -35,10 +41,10 @@ header{
 	color: $granate;
 }
 .color-institucional{
-	color:$institucional;
+	color:$primary;
 }
 .bg-institucional{
-	background-color: $institucional;
+	background-color: $primary;
 }
 .icon-social{
 
@@ -60,6 +66,19 @@ header{
 	.youtube:hover{
 		color:$youtube;
 	}
+}
+.icon-enlace{
+	color: $primary;
+	padding: 0.5rem 0;
+	&:hover{
+		color: white;
+		text-decoration: none;
+		background-color: $primary;
+		border-radius: 0.2rem;
+	}
+}
+.enlace-text{
+	margin: 0.4rem 0;
 }
 
 footer{

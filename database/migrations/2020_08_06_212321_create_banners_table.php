@@ -20,6 +20,7 @@ class CreateBannersTable extends Migration
             $table->text('BanTxt');
             $table->string('BanRed',150);
             $table->string('BanPos',150);
+            $table->integer('BanEst');
             $table->timestamps();
         });
     }

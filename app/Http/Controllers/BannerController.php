@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Entities\Banner;
 use App\Repository\BannersRepository;
-
 use Illuminate\Http\Request;
 
 
@@ -22,8 +21,9 @@ class BannerController extends Controller
 
     public function index()
     {
-        $banners=$this->banners->listBanner();
-        return view('inicio')->with(compact('banners'));
+        $data=$this->banners->listBanner();
+        $indice=$this->banners->bannersActivos();
+        return view('inicio')->with(compact('data','indice'));
     }
 
     /**
