@@ -1,51 +1,51 @@
 <section class="enlaces">
 	<div class="container">
-		<div class="row justify-content-between align-items-center">
+		<div class="row justify-content-between align-items-center fill-enlaces">
 			<div class="col-4 col-md-4 col-lg-2 text-center">
 				<a href="#" class="icon-enlace">
 					<div class="icon-enlace">
-						<i class="fas fa-bullhorn enlace-text"></i>
-						<h5 class="text-uppercase enlace-text">eventos</h5>
+						<h5><i class="fas fa-bullhorn enlace-text"></i></h5>
+						<h6 class="text-uppercase enlace-text">eventos</h6>
 					</div>
 				</a>
 			</div>
 			<div class="col-4 col-md-4 col-lg-2 text-center">
 				<a href="#" >
 					<div class="icon-enlace">
-						<i class="fas fa-bullhorn enlace-text"></i>
-						<h5 class="text-uppercase enlace-text">eventos</h5>	
+						<h5> <i class="fas fa-money-bill-wave"></i></h5>
+						<h6 class="text-uppercase enlace-text">formas de pago</h6>	
 					</div>
 				</a>
 			</div>
 			<div class="col-4 col-md-4 col-lg-2 text-center">
 				<a href="#" >
 					<div class="icon-enlace">
-						<i class="fas fa-bullhorn enlace-text"></i>
-						<h5 class="text-uppercase enlace-text">eventos</h5>
+						<h5><i class="far fa-newspaper"></i></h5>
+						<h6 class="text-uppercase enlace-text">oportunidad laboral</h6>
 					</div>
 				</a>
 			</div>
 			<div class="col-4 col-md-4 col-lg-2 text-center">
 				<a href="#" >
 					<div class="icon-enlace">
-						<i class="fas fa-bullhorn enlace-text"></i>
-						<h5 class="text-uppercase enlace-text">eventos</h5>
+						<h5><i class="fas fa-user-graduate"></i></h5>
+						<h6 class="text-uppercase enlace-text">alumnos</h6>
 					</div>
 				</a>
 			</div>
 			<div class="col-4 col-md-4 col-lg-2 text-center">
 				<a href="#" >
 					<div class="icon-enlace">
-						<i class="fas fa-bullhorn enlace-text"></i>
-						<h5 class="text-uppercase enlace-text">eventos</h5>
+						<h5><i class="fas fa-user-tie"></i></h5>
+						<h6 class="text-uppercase enlace-text">instructores</h6>
 					</div>
 				</a>
 			</div>
 			<div class="col-4 col-md-4 col-lg-2 text-center">
 				<a href="#" >
 					<div class="icon-enlace">
-						<i class="fas fa-bullhorn enlace-text"></i>
-						<h5 class="text-uppercase enlace-text">eventos</h5>
+						<h5><i class="fas fa-print"></i></h5>
+						<h6 class="text-uppercase enlace-text">tramites</h6>
 					</div>
 				</a>
 			</div>

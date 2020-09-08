@@ -8,7 +8,7 @@ use App\Entities\Banner;
  */
 class BannersRepository {
 	
-	 public function listBanner(){
+	public function listBanner(){
 		return Banner::where('BanEst',1)->orderBy('BanPos','asc')->get();
 	}
 

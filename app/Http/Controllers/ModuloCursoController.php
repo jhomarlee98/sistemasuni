@@ -2,21 +2,27 @@
 
 namespace App\Http\Controllers;
 
+use App\Entities\ModuloCurso;
+use App\Repository\ModulosCursosRepository;
 use Illuminate\Http\Request;
 
-
-
-class BannerController extends Controller
+class ModuloCursoController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
+    public function __construct(ModulosCursosRepository $modulos_cursos){
+        $this->modulos_cursos=$modulos_cursos;
+    }
+
 
     public function index()
     {
-
+        //$modcur=$this->modulos_cursos->listarActivos();
+        $modcur='sadas';
+        return view('inicio')->with(compact('modcur'));
     }
 
     /**

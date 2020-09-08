@@ -2,21 +2,34 @@
 
 namespace App\Http\Controllers;
 
+use App\Repository\PageRepository;
 use Illuminate\Http\Request;
 
-
-
-class BannerController extends Controller
+class PageController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
+    public function __construct(PageRepository $data){
+        $this->data=$data;
+    }
 
     public function index()
     {
+        $banners=$this->data->listarBanners();
+        $banners_indice=$this->data->bannersActivos();
 
+        $modulos_cursos=$this->data->listarModulosCursos();
+        $cursos=$this->data->listarCursos();
+        $modulos=$this->data->listarModulos();
+
+        $areas=$this->data->listarAreas();
+
+        return view('inicio')->with(compact('banners','banners_indice','modulos_cursos','cursos','modulos','areas'));
+
+        //return view('widgets.slider')->with(compact('banners','banners_indice'));
     }
 
     /**

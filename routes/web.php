@@ -17,5 +17,5 @@ use Illuminate\Support\Facades\Route;
 //    return view('inicio');
 //});
 
-Route::get('','BannerController@index');
+Route::get('','PageController@index');
 //Route::resource('/apk/banners','BannerController');

@@ -21,27 +21,36 @@
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Cursos
+          <a class="nav-link dropdown-toggle" href="#" id="horariosDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Horarios<span class="sr-only">(current)</span>
           </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Certificacion Intenacional</a>
-            <a class="dropdown-item" href="#">Modulares</a>
+          <div class="dropdown-menu" aria-labelledby="horariosDropdown">
+            <a class="dropdown-item" href="#">Sede Central</a>
+            <a class="dropdown-item" href="#">Sede San Borja</a>
             <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Something else here</a>
+            <a class="dropdown-item" href="#">Eventos</a>
           </div>
         </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="horariosDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Certificaciones
+          </a>
+          <div class="dropdown-menu" aria-labelledby="horariosDropdown">
+            <a class="dropdown-item" href="#">PERSON VUE (Centro Autorizado)</a>
+            <a class="dropdown-item" href="#">Informatica educativa</a>
+            <a class="dropdown-item" href="#">Capacitación a empresas</a>
+          </div>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="#">Cursos</a>
+        </li>
         <li class="nav-item">
-          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          <a class="nav-link" href="#">Talleres</a>
         </li>
       </ul>
+        <input class="mr-sm-2" type="nameCurso" placeholder="Nombre del curso" aria-label="Search" required="true">
+        <button class="btn btn-outline-info my-2 my-sm-0" data-toggle="modal" data-target="#cursoHorario">Buscar</button>
       <div class="col-lg-3 col-md-4 col-12 text-center icon-social">
         @include('widgets.social')
       </div>

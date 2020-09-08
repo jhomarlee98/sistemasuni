@@ -1,16 +1,16 @@
 <div id="sliders" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
-  	@for ($i = 0; $i < $indice; $i++)
+  	@for ($i = 0; $i < $banners_indice; $i++)
       <li data-target="#sliders" data-slide-to="{{ $i }}" @if($i ==0) class="active" @endif ></li>
     @endfor
   </ol>
   <div class="carousel-inner">
-  	@if (!empty($data))
-  		@foreach($data as $banner)
+  	@if (!empty($banners))
+  		@foreach($banners as $banner)
     		<div class="carousel-item @if($banner->BanPos=='1') active @endif">
       		<img src="{{asset($banner->BanUrl)}}" class="d-block w-100" alt="{{$banner->BanNom}}">
       		<div class="carousel-caption  d-block">
-        		<h4 class="d-none d-md-block text-uppercase">{{$banner->BanTxt}}</h4>
+        		<h6 class="d-none d-md-block text-uppercase">{{$banner->BanTxt}}</h6>
         		<a href="{{$banner->BanRed}}" class="btn btn-primary btn-sm " role="button" aria-pressed="true">{{$banner->BanNom}}</a>
       		</div>
     		</div>
